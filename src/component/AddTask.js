@@ -37,7 +37,7 @@ function AddTask() {
     const [Content, setContent] = useState('')
     const handlesubmit =(e)=>{
         e.preventDefault()
-        dispatch(addTask({id:uuidv4(),Content}))
+        dispatch(addTask({id:uuidv4(),content:Content, isdone:false}))
         handleClose()
     }
     return (

@@ -18,12 +18,12 @@ import {ADD,EDIT,DELETE,ISDONE} from "./Types";
   };
   
   
-  /*export const isdone = (id) => {
+  export const isdone = (id) => {
     return {
       type: ISDONE,
       payload: id,
     };
-  };*/
+  };
   
  
   export const deleteTask = (id) => {

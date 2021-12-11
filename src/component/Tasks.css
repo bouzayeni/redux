@@ -1,0 +1,53 @@
+.dest{
+    
+    text-align: center;
+    
+    
+}
+/*.fa-cust{
+    position: relative;
+    
+    text-align: center;
+    line-height: center;
+    box-shadow: 0 0 0 2px red;
+    border-radius: 50%;
+    font-size: 30px;
+    color: red;
+    transition: .5s;
+
+}
+.fa-cust::before{
+content:'';
+position: absolute;
+top:0;
+left: 0;
+width: 100%;
+height: 100%;
+transition: .5s;
+background: red;
+z-index: -1;
+transform: rotate(-45deg) scaleX(0);
+}
+.fa-cust:hover{
+    color: white;
+}
+.fa-cust:hover:before{
+    transform: rotate(-45deg) scaleX(1) ;
+}*/
+.hi:hover{
+    color: red;
+}
+.hii:hover{
+    color: white;
+}
+.he,.hi,.hii,.hiii,.hiiii{
+    
+display:flex;
+
+display: inline;
+justify-content: space-between;
+
+}
+.hiii:hover{
+color: yellow;
+}

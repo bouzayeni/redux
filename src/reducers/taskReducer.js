@@ -1,5 +1,5 @@
 
-import { ADD,EDIT ,DELETE } from '../actions/Types';
+import { ADD,EDIT ,DELETE,ISDONE } from '../actions/Types';
 
 
 const initialState = {
@@ -10,10 +10,9 @@ const initialState = {
       case ADD:
         return { ...state, ListTask: [...state.ListTask, payload] };
       case EDIT:
-        return {...state, ListTask: state.ListTask.map((el) => el.id === payload.id ? {...el,content: payload.content,  }: el ), };
-      /*case isDone:
-        return { ...state, Task: state.Task.map((el) => el.id === action.payload ? {...el, isDone: !el.isDone, }: el ),
-        };*/
+        return {...state, ListTask: state.ListTask.map((el) => el.id === payload.id ? {...el,content: payload.content}: el ) };
+      case ISDONE:
+        return { ...state, ListTask: state.ListTask.map((el) => el.id === payload ? {...el, isdone: !el.isdone }: el ) };
       case DELETE:
         return {...state, ListTask: state.ListTask.filter(({ id }) => id !== payload),
         };
